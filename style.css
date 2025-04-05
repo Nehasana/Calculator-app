@@ -1,88 +1,83 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url(./image\ copy.png);
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
-}
 
-/* Calculator Container */
-.calculator {
-    background: cadetblue;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(222, 124, 174, 0.3);
-    text-align: center;
-}
+body {     
+    display: flex;     
+    justify-content: center;     
+    align-items: center;     
+    height: 100vh;     
+        
+    background-size: cover;     
+    background-position: center;     
+    font-family: Arial, sans-serif;     
+    background-image: url("https://image.slidesdocs.com/responsive-images/background/simple-white-education-pencil-calculator-art-powerpoint-background_644fe4b2ed__960_540.jpg"); 
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBIfLvoo7mcDZX65MxUHb15LusHahVdd5vJw&s.jpg"); */
+    
+}   
 
-/* Display */
-#display {
-    width: 100%;
-    height: 100px;
-    text-align: right;
-    font-size: 2em;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: burlywood;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
+.calculator {     
+    background: #a63fdd;  /* Dark Blue */
+    padding: 20px;     
+    border-radius: 12px;     
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);     
+    text-align: center;     
+}   
 
+#display {     
+    width: 100%;     
+    height: 100px;     
+    text-align: right;     
+    font-size: 2em;     
+    padding: 10px;     
+    margin-bottom: 10px;     
+    background: #263238;
+    color: #fff;     
+    border: none;     
+    outline: none;     
+    border-radius: 5px; 
+}   
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
+.buttons {     
+    display: grid;     
+    grid-template-columns: repeat(4, 1fr);     
+    gap: 10px; 
+}   
 
-/* Button Styling */
-button {
-    width: 100%;
-    padding: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    border:darkmagenta;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    color: black;
-}
+button {     
+    width: 100%;     
+    padding: 20px;     
+    font-size: 1.5em;     
+    font-weight: bold;     
+    border: 2px solid #1C2833;     
+    cursor: pointer;     
+    border-radius: 8px;     
+    transition: 0.3s ease-in-out;     
+    color: white; 
+}   
 
-/* Number Buttons */
-button:not(.operator, .equal, .clear, .delete) {
-    background:burlywood;
-}
+button:not(.operator, .equal, .clear, .delete) {     
+    background: #3498DB;
+}   
 
-/* Operator Buttons */
-.operator {
-    background: orangered;
-}
+.operator {     
+    background: #E67E22;
+}   
 
-/* Equal Button */
-.equal {
-    background:orangered;
-    grid-row: span 2;
-}
+.equal {     
+    background: #27AE60; 
+    grid-row: span 2; 
+}   
 
-/* Clear and Delete Buttons */
-.clear {
-    background: orangered;
-}
-.delete {
-    background: orangered;
-}
+.clear {     
+    background: #C0392B; 
+} 
 
-/* Special Button: Zero */
-.zero {
-    grid-column: span 2;
-}
+.delete {     
+    background: #C0392B; 
+}  
 
-/* Hover Effects */
-button:hover {
-    opacity: 0.5;
-}
+.zero {     
+    grid-column: span 2; 
+}  
+
+button:hover {     
+    opacity: 0.8; 
+} 
